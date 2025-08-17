@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menu | Namaste Restaurant</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&amp;family=Roboto&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<link href="../css/style.css" rel="stylesheet"/>
+<link href="../css/menu.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/></head>
+<body>
+<header class="site-header">
+<div class="logo">
+<img alt="Namaste Logo" class="nav-logo" src="../Images/Namaste logo.png"/>
+<span>Namaste Restaurant</span>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+<div class="container-fluid">
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+<li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<button aria-label="Toggle dark mode" id="theme-toggle">🌙</button>
+</header>
+<section class="menu-hero container my-4">
+<div class="container">
+<h1>Our Menu</h1>
+<p>Authentic Nepali flavors crafted with traditional recipes</p>
+</div>
+</section>
+<section class="menu-section container my-4">
+<div class="container" style="background: rgba(255,255,255,0.85); border-radius: 24px; box-shadow: 0 4px 32px rgba(0,0,0,0.10); padding: 2rem 0;">
+<div class="menu-categories">
+<button class="category-btn active" data-category="all">All Items</button>
+<button class="category-btn" data-category="starters">Starters</button>
+<button class="category-btn" data-category="mains">Main Courses</button>
+<button class="category-btn" data-category="desserts">Desserts</button>
+<button class="category-btn" data-category="drinks">Drinks</button>
+<button class="category-btn" data-category="specials">Specials</button>
+</div>
+<div class="menu-items" id="menu-items">
+<!-- Starters -->
+<div class="menu-item" data-category="starters">
+<div class="menu-item-img-container"><img alt="Sel Roti" src="../Images/sel roti.jpg"/></div>
+<div class="item-info">
+<h3>Sel Roti <span class="price">£2.99</span></h3>
+<p>Traditional Nepali rice flour doughnut, crispy on the outside and soft inside, with a hint of cardamom.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="starters">
+<div class="menu-item-img-container"><img alt="Pani Puri" src="../Images/pani puri.jpg"/></div>
+<div class="item-info">
+<h3>Pani Puri <span class="price">£3.99</span></h3>
+<p>Crispy hollow puris filled with spiced potato and chickpeas, dunked in tangy tamarind water.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="starters">
+<div class="menu-item-img-container"><img alt="Chatpat" src="../Images/chatpat.jpg"/></div>
+<div class="item-info">
+<h3>Chatpat <span class="price">£3.50</span></h3>
+<p>A zesty mix of puffed rice, roasted chickpeas, onions, and spices with a citrusy kick.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="starters">
+<div class="menu-item-img-container"><img alt="Aloo Sadeko" src="../Images/aloo sadeko.webp"/></div>
+<div class="item-info">
+<h3>Aloo Sadeko <span class="price">£3.99</span></h3>
+<p>Spiced boiled potatoes tossed with roasted sesame, mustard oil, and Himalayan herbs.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="starters">
+<div class="menu-item-img-container"><img alt="Buff Sekuwa" src="../Images/buff sekewa.jpeg"/></div>
+<div class="item-info">
+<h3>Buff Sekuwa <span class="price">£5.99</span></h3>
+<p>Juicy buffalo cubes marinated in Nepali spices and grilled over charcoal.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="starters">
+<div class="menu-item-img-container"><img alt="Kwati" src="../Images/kwati.webp"/></div>
+<div class="item-info">
+<h3>Kwati <span class="price">£4.20</span></h3>
+<p>Nutrient-rich soup made from nine different sprouted beans with Nepali spices.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="starters">
+<div class="menu-item-img-container"><img alt="Samosa" src="../Images/samosa.jpg"/></div>
+<div class="item-info">
+<h3>Samosa <span class="price">£2.99</span></h3>
+<p>Crispy pastry filled with spiced potatoes and peas, served with tangy tamarind chutney.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<!-- Main Courses -->
+<div class="menu-item" data-category="mains">
+<div class="menu-item-img-container"><img alt="Dal Bhat Tarkari" src="../Images/dal-bhat-tarkari.jpeg"/></div>
+<div class="item-info">
+<h3>Dal Bhat Tarkari <span class="price">£9.99</span></h3>
+<p>Nepal's staple meal - lentil soup, steamed rice, seasonal vegetables, and pickles.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="mains">
+<div class="menu-item-img-container"><img alt="Khasi Ko Masu" src="../Images/khasi ko masu.png"/></div>
+<div class="item-info">
+<h3>Khasi Ko Masu <span class="price">£11.50</span></h3>
+<p>Rich goat curry slow-cooked with Nepali spices and mountain herbs.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="mains">
+<div class="menu-item-img-container"><img alt="Momo" src="../Images/momo.jpg"/></div>
+<div class="item-info">
+<h3>Momo <span class="price">£6.50</span></h3>
+<p>Himalayan dumplings filled with spiced meat or veggies, served with sesame-tomato chutney.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="mains">
+<div class="menu-item-img-container"><img alt="Chowmein" src="../Images/chowmein.jpg"/></div>
+<div class="item-info">
+<h3>Chowmein <span class="price">£6.99</span></h3>
+<p>Stir-fried noodles with fresh vegetables and your choice of protein in Nepali spices.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="mains">
+<div class="menu-item-img-container"><img alt="Bhuttan" src="../Images/Bhuttan.png"/></div>
+<div class="item-info">
+<h3>Bhuttan <span class="price">£7.50</span></h3>
+<p>Spiced fried goat tripe, a Newari delicacy with bold flavors.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="mains">
+<div class="menu-item-img-container"><img alt="Buff Sukuti" src="../Images/Buff sukuti.webp"/></div>
+<div class="item-info">
+<h3>Buff Sukuti <span class="price">£6.99</span></h3>
+<p>Sun-dried buffalo meat roasted with spices, a Himalayan jerky.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="mains">
+<div class="menu-item-img-container"><img alt="Machha Ko Jhol" src="../Images/Machha ko jhol.webp"/></div>
+<div class="item-info">
+<h3>Machha Ko Jhol <span class="price">£8.99</span></h3>
+<p>Light fish curry with Nepali spices and fresh coriander.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="mains">
+<div class="menu-item-img-container"><img alt="Dhido and Gundruk" src="../Images/dhihdo and gundruk.webp"/></div>
+<div class="item-info">
+<h3>Dhido and Gundruk <span class="price">£10.50</span></h3>
+<p>Traditional buckwheat porridge with fermented greens soup, a Himalayan staple.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="mains">
+<div class="menu-item-img-container"><img alt="Aloo Tama" src="../Images/aloo tama.webp"/></div>
+<div class="item-info">
+<h3>Aloo Tama <span class="price">£7.20</span></h3>
+<p>Unique curry with bamboo shoots, potatoes, and black-eyed peas in tangy broth.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<!-- Desserts -->
+<div class="menu-item" data-category="desserts">
+<div class="menu-item-img-container"><img alt="Juju Dhau" src="../Images/Juju dhau.png"/></div>
+<div class="item-info">
+<h3>Juju Dhau <span class="price">£3.99</span></h3>
+<p>"King of Yogurt" - Bhaktapur's famous sweet creamy yogurt in clay pots.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="desserts">
+<div class="menu-item-img-container"><img alt="Peda" src="../Images/peda.png"/></div>
+<div class="item-info">
+<h3>Peda <span class="price">£2.50</span></h3>
+<p>Soft milk fudge flavored with cardamom and garnished with pistachios.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="desserts">
+<div class="menu-item-img-container"><img alt="Laddu" src="../Images/laddu.jpg"/></div>
+<div class="item-info">
+<h3>Laddu <span class="price">£2.99</span></h3>
+<p>Sweet gram flour balls with ghee, sugar, and aromatic spices.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="desserts">
+<div class="menu-item-img-container"><img alt="Lakhamari" src="../Images/Lakhamari.png"/></div>
+<div class="item-info">
+<h3>Lakhamari <span class="price">£2.99</span></h3>
+<p>Traditional Newari sweet bread with intricate designs and sesame flavor.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="desserts">
+<div class="menu-item-img-container"><img alt="Barfi" src="../Images/barfi.webp"/></div>
+<div class="item-info">
+<h3>Barfi <span class="price">£2.80</span></h3>
+<p>Dense milk-based sweet with nuts, flavored with rose water.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="desserts">
+<div class="menu-item-img-container"><img alt="Lal mohan" src="../Images/lal mohan.jpeg"/></div>
+<div class="item-info">
+<h3>Lalmohan <span class="price">£3.50</span></h3>
+<p>Soft milk balls soaked in saffron-infused sugar syrup.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="desserts">
+<div class="menu-item-img-container"><img alt="Thekua" src="../Images/Thekua.jpeg"/></div>
+<div class="item-info">
+<h3>Thekua <span class="price">£2.50</span></h3>
+<p>Crunchy Terai-style cookies made with wheat flour and jaggery.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="desserts">
+<div class="menu-item-img-container"><img alt="Jerry" src="../Images/Jerry.webp"/></div>
+<div class="item-info">
+<h3>Jerry <span class="price">£2.50</span></h3>
+<p>Sweet, deep-fried spiral dessert soaked in sugar syrup, a Nepali favorite.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<!-- Drinks -->
+<div class="menu-item" data-category="drinks">
+<div class="menu-item-img-container"><img alt="Chhyang" src="../Images/chhyang.webp"/></div>
+<div class="item-info">
+<h3>Chhyang <span class="price">£3.00</span></h3>
+<p>Traditional Himalayan rice beer with mild sweetness.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="drinks">
+<div class="menu-item-img-container"><img alt="Raksi" src="../Images/raksi.jpg"/></div>
+<div class="item-info">
+<h3>Raksi <span class="price">£3.50</span></h3>
+<p>Clear Nepali spirit distilled from millet or rice.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="drinks">
+<div class="menu-item-img-container"><img alt="Tongba" src="../Images/Tongba.png"/></div>
+<div class="item-info">
+<h3>Tongba <span class="price">£4.50</span></h3>
+<p>Fermented millet drink served warm in wooden containers.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="drinks">
+<div class="menu-item-img-container"><img alt="Lassi" src="../Images/lassi.avif"/></div>
+<div class="item-info">
+<h3>Lassi <span class="price">£2.50</span></h3>
+<p>Yogurt-based drink available sweet or salted.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="drinks">
+<div class="menu-item-img-container"><img alt="Nepali Chiya" src="../Images/chaiya.jpg"/></div>
+<div class="item-info">
+<h3>Nepali Chiya <span class="price">£1.80</span></h3>
+<p>Spiced milk tea with cardamom, ginger, and cloves.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="drinks">
+<div class="menu-item-img-container"><img alt="Buffalo Milk" src="../Images/buffalo milk.webp"/></div>
+<div class="item-info">
+<h3>Buffalo Milk <span class="price">£3.99</span></h3>
+<p>Rich and creamy milk served warm with sugar.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<!-- Specials -->
+<div class="menu-item" data-category="specials">
+<div class="menu-item-img-container"><img alt="Nepali Thali" src="../Images/thali set.jpg"/></div>
+<div class="item-info">
+<h3>Nepali Thali Set <span class="price">£12.99</span></h3>
+<p>Complete Nepali meal with dal, bhat, tarkari, achar, meat curry, yogurt, and dessert.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="specials">
+<div class="menu-item-img-container"><img alt="Samay Baji" src="../Images/Samay Baji.jpeg"/></div>
+<div class="item-info">
+<h3>Samay Baji <span class="price">£10.50</span></h3>
+<p>Traditional Newari platter with beaten rice, smoked fish, boiled egg, black soybeans, and pickles.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="specials">
+<div class="menu-item-img-container"><img alt="Chhoila" src="../Images/chhoila.jpg"/></div>
+<div class="item-info">
+<h3>Chhoila Set <span class="price">£9.99</span></h3>
+<p>Spicy grilled buffalo meat with beaten rice, black soybeans, and potato salad.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="specials">
+<div class="menu-item-img-container"><img alt="Dhido Set" src="../Images/dhidooo.png"/></div>
+<div class="item-info">
+<h3>Dhido Set <span class="price">£11.50</span></h3>
+<p>Traditional Himalayan meal with buckwheat dhido, gundruk, meat curry, and greens.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+<div class="menu-item" data-category="specials">
+<div class="menu-item-img-container"><img alt="Sukuti Set" src="../Images/sukuti.jpg"/></div>
+<div class="item-info">
+<h3>Sukuti Set <span class="price">£10.99</span></h3>
+<p>Dried meat platter with rice, pickles, and seasonal vegetables.</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="footer-content">
+<div class="footer-section">
+<h3>Namaste Restaurant</h3>
+<p>Bringing genuine Nepali cuisine to your table with love and attention.</p>
+</div>
+<div class="footer-section">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h3>Follow Us</h3>
+<div class="social-icons">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2020 Namaste Restaurant. All rights reserved.</p>
+</div>
+</footer>
+<script src="../js/script.js"></script>
+<script src="../js/menu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script></body>
+</html>
