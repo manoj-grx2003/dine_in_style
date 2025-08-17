@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Your Cart - Namaste Restaurant</title>
+<link href="../css/style.css" rel="stylesheet"/>
+<link href="../css/cart.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&amp;family=Roboto&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/></head>
+<body>
+<header class="site-header">
+<div class="logo">
+<img alt="Namaste Logo" class="nav-logo" src="../Images/Namaste logo.png"/>
+<span>Namaste Restaurant</span>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+<div class="container-fluid">
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+<li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<button aria-label="Toggle dark mode" id="theme-toggle">🌙</button>
+</header>
+<section class="cart-hero container my-4">
+<div class="container">
+<h1>Your Order</h1>
+<p>Review and place your order</p>
+</div>
+</section>
+<section class="cart-section container my-4">
+<div class="container">
+<div class="cart-container">
+<div class="cart-items">
+<h2>Your Items</h2>
+<div class="cart-items-list" id="cart-items"> 
+
+
+<div class="empty-cart-message">
+<p>Your cart is empty</p>
+<a class="cta-button" href="menu.html">Browse Menu</a>
+</div>
+</div>
+</div>
+<div class="order-summary">
+<h2>Order Summary</h2>
+<div class="summary-details">
+<div class="summary-row">
+<span>Subtotal</span>
+<span id="subtotal">£0.00</span>
+</div>
+<div class="summary-row">
+<span>Delivery Fee</span>
+<span id="delivery-fee">£2.50</span>
+</div>
+<div class="summary-row total">
+<span>Total</span>
+<span id="total">£2.50</span>
+</div>
+</div>
+<form id="checkout-form">
+<div class="form-group">
+<label for="delivery-option">Delivery Option</label>
+<select id="delivery-option" name="delivery-option">
+<option value="delivery">Delivery</option>
+<option value="pickup">Pickup</option>
+</select>
+</div>
+<div class="form-group">
+<label for="delivery-address">Delivery Address</label>
+<textarea id="delivery-address" name="delivery-address" rows="3"></textarea>
+</div>
+<div class="form-group">
+<label for="special-requests">Special Requests</label>
+<textarea id="special-requests" name="special-requests" rows="3"></textarea>
+</div>
+<button class="cta-button" id="checkout-button" type="submit">Proceed to Checkout</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<section class="recommendations container my-4">
+<div class="container">
+<h2>You Might Also Like</h2>
+<div class="recommendation-grid">
+<div class="recommendation-item">
+<img alt="Thukpa" src="../Images/thukpa.png"/>
+<h3>Thukpa</h3>
+<p>£8.99</p>
+<button class="add-to-cart" data-id="thukpa" data-image="../Images/thukpa.png" data-name="Thukpa" data-price="8.99">Add to Cart</button>
+</div>
+<div class="recommendation-item">
+<img alt="Fried Rice" src="../Images/fried rice.jpg"/>
+<h3>Fried Rice</h3>
+<p>£7.50</p>
+<button class="add-to-cart" data-id="fried-rice" data-image="../Images/fried rice.jpg" data-name="Fried Rice" data-price="7.50">Add to Cart</button>
+</div>
+<div class="recommendation-item">
+<img alt="Paneer Tikka" src="../Images/paneer tikka.avif"/>
+<h3>Paneer Tikka</h3>
+<p>£6.99</p>
+<button class="add-to-cart" data-id="paneer-tikka" data-image="../Images/paneer tikka.avif" data-name="Paneer Tikka" data-price="6.99">Add to Cart</button>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="footer-content">
+<div class="footer-section">
+<h3>Namaste Restaurant</h3>
+<p>Bringing genuine Nepali cuisine to your table with love and attention</p>
+</div>
+<div class="footer-section">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h3>Follow Us</h3>
+<div class="social-icons">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© <span id="current-year">2020</span> Namaste Restaurant. All rights reserved.</p>
+</div>
+</footer>
+<script src="../js/script.js"></script>
+<script src="../js/cart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script></body>
+</html>
